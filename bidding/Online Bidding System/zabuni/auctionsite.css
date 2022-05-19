@@ -1,0 +1,400 @@
+#head {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    font-family: 'Tahoma';
+    text-align: center;
+    box-sizing: border-box;
+
+}
+#head ul{
+    display:inline-flex;
+    list-style-type: none;
+    color: blue;
+
+}
+#head ul li {
+    width:120px;
+    margin:10px;
+    padding: 5px;
+    margin-inline: 80px;
+}
+#hhead ul li a{
+    text-decoration: none;
+    color: blue;
+}
+
+
+#top_panel {
+    display: flex;
+    height: 20vh;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#top_panel h1{
+    align-self:"center";
+
+}
+
+.top_panel title{
+    float: right;
+    color: darkcyan;
+    font-family:'Lucida Sans';
+}
+
+#horizontal_nav{
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    font-family: 'Tahoma';
+    text-align: center;
+    box-sizing: border-box;
+}
+#horizontal_nav ul{
+    display:inline-flex;
+    list-style-type: none;
+    color: darkcyan;
+
+}
+#horizontal_nav ul li {
+    width:120px;
+    margin:5px;
+    padding: 5px;
+}
+#horizontal_nav ul li a{
+    text-decoration: none;
+    color: blue;
+}
+.active, #horizontal_nav ul li:hover{
+    background-color:greenyellow;
+
+}
+#horizontal_nav .fa{
+    margin: 5px;
+}
+#horizontal_nav .sub_menu{
+    display: none;
+}
+#horizontal_nav ul li:hover .sub_menu{
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -15px;
+}
+#horizontal_nav ul li:hover .sub_menu ul{
+    display: block;
+    margin:10px;
+}
+#horizontal_nav ul li:hover .sub_menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted;
+    background: transparent;
+    text-align: left;
+}
+#horizontal_nav ul li:hover .sub_menu ul li:last-child{
+    border-bottom: none;
+}
+#horizontal_nav ul li:hover .sub_menu ul li a:hover{
+    background-color: red;
+}
+
+.background_image    {
+    background: url(images/backgroundimage1.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    
+    justify-content: right;
+}
+
+/*Styling the Registrations Form*/
+#registrations_form{
+    width: 400px;
+    font-size: 18px;
+    margin : 12vh auto auto; 
+    padding: 12px;
+    background-color:bisque;
+    border-style: solid;
+    border-radius: 3px;
+}
+#registrations_form h2{
+    color: black;
+    text-align: center;
+}
+#registrations_form button{
+    padding: 10px;
+    margin-top: 10px;
+    width: 30%;
+    height:10%;
+    border-radius:4px;
+    display: block;
+    padding: 10px;
+    width:30%;
+    background-color: lightblue;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.registrations_input{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-content: center;
+}
+.registrations_input.error input{
+    border-color: red;
+    
+}
+.registrations_input.success input{
+    border-color:#09c372;
+}
+.registrations_input .error{
+    color:red;
+    height: 15px;
+    font-size: 15px;
+}
+
+/*Styling the Login Form*/
+#login_form{
+    width: 23%;
+    font-size: 18px;
+    margin : 20vh auto auto; 
+    padding: 12px;
+    background-color:bisque;
+    border-style: solid;
+    border-radius: 3px;
+    margin-top: 5%;
+}
+#login_form h2{
+    color: black;
+    text-align: center;
+}
+#login_form button{
+    padding: 10px;
+    margin-top: 10px;
+    width: 30%;
+    height:10%;
+    border-radius:4px;
+    display: block;
+    padding: 10px;
+    width:30%;
+    background-color: lightblue;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.login_input{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-content: left;
+}
+.login_registration a:hover{
+    color: red;
+}
+
+/*Styling the About Us Page*/
+.ab-section{
+    width:100%;
+    min-height:100vh;
+    background-color: bisque;
+    box-sizing:border-box;
+}
+.ab-container{
+    width: 80%;
+    display: block;
+    margin:auto;
+    padding-top:100px;
+}
+.content-section{
+    float:left;
+    width:55%
+}
+.image-section{
+    float:right;
+    width:40%;
+}
+image-section img{
+    width:100%;
+    height:auto;
+}
+.content-section .title{
+    margin-top:0px;
+    text-transform:uppercase;
+    font-size:20px;
+    text-align: center;
+}
+.content-section .content h3{
+    margin-top: 20px;
+}
+.content-section .content p{
+    margin-top:10px;
+    font-family: 'tahoma';
+    font-size:18px;
+    line-height:1.5;
+}
+.content-section .socials{
+    margin: 40px 40px;
+
+}
+.content-section .socials i{
+    color:darkcyan;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+.content-section .socials i:hover{
+    color: brown;
+
+}
+.content-section{
+    float:none;
+    width:100%;
+    display:block;
+    margin:auto;
+}
+
+/*Styling the {products view*/
+.products-view{
+    margin:auto;
+}
+.products-view .row{
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+.products-view .row .row-image{
+    flex-basis:25%;
+    padding:10px;
+    min-width:200px;
+    margin-bottom:50px;
+
+}
+.row-image img{
+    width: 100%;
+}
+h4{
+    color:blue;
+    font-weight: normal;
+    margin-top: 5px;
+}
+.row-image p{
+    font-size: 15px;
+}
+
+/*Styling the products view*/
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+.card-body{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+/*Styling categories sidebar*/
+#sidebar{
+    width: 200px;
+    float: left;
+    height: fit-content;
+    border: solid blue;
+}
+#cats{
+   text-align: center;
+   padding: 5px;
+}
+
+#cats li{
+    list-style: none;
+    margin: 5px;
+}
+
+#cats a{
+    text-decoration:none;
+    color: darkblue;
+    padding: 8px;
+    margin: 5px;
+    font-size: 22px;
+    font-family:Tahoma
+}
+
+#cats a:hover{
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/*Styling products*/
+#products_box{
+    width: 800px;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: inline-flex;
+}
+#single_product{
+    float: left;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+#single_product img{
+    border:2px solid blue;
+}
+.background_image h3{
+    font-family:'Tahoma';
+    font-size:25px;
+    color: blue;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 2%
+}
+
+.background_image h3 a{
+    font-family: 'Tahoma';
+    color: red;
+}
+.background_image h3 a :hover{
+    color:red;
+}
+
+/*Styling bid form*/
+#bid_form{
+    width: 100%;
+    font-size: 18px;
+    
+}
+#bid_form h6{
+    color: black;
+    text-align: center;
+}
+#bid_form button{
+    padding: 10px;
+    margin-top: 10px;
+    width: 50%;
+    height:10%;
+    border-radius:4px;
+    display: inline-flex;
+    padding: 10px;
+    width:30%;
+    background-color: lightblue;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.bid_input{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-content: left;
+}
+/*Styling bid section*/
+.bid_section{
+    display: flex;
+}
+
+
